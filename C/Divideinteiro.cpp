@@ -4,6 +4,7 @@
 int main (){
 	
 	int n1, n2, resultado = 0;
+	
 	printf("digite primeiro numero:");
 	fflush(stdout);
 	scanf("%d",&n1);
