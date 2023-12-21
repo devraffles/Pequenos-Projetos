@@ -31,16 +31,25 @@ int main()
   int op;
 
   printf("\nDigite o primeiro numero:");
+  fflush(stdout);
   scanf("%d",&n1);
+  fflush(stdin);
+  
   printf("\nDigite o segundo numero:");
+  fflush(stdout);
   scanf("%d",&n2);
+  fflush(stdin);
+  
   printf("\nDigite o codigo para operacao desejada:\n");
   printf("\n(1)-Soma\n");
   printf("\n(2)-Subtracao\n");
   printf("\n(3)-Multiplicacao\n");
   printf("\n(4)-Divisao\n");
   printf("\n\n");
+  fflush(stdout);
   scanf("%d",&op);
+  fflush(stdin);
+  
   switch (op)
   {
     case 1:
@@ -59,13 +68,15 @@ int main()
       }
       else
       {
-        printf("\nOperacao invalida, pois n„o existe divisao por zero\n");
+        printf("\nOperacao invalida, pois n√£o existe divisao por zero\n");
       }
       break;
     default:
       printf("\nOperacao invalida!!!\n");
   }
   printf("\nO resultado da operacao e:%.1f",result);
+  fflush(stdout);
   getch();
+  
   return 0;
 }
