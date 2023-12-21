@@ -1,11 +1,16 @@
-//FaÁa um algoritmo que leia as dimensıes de um quadrado e imprima a sua ·rea;
+//Fa√ßa um algoritmo que leia as dimens√µes de um quadrado e imprima a sua √°rea;
 #include <stdio.h>
 int main()
 {
-int lado, area;
-printf("Digite o lado do quadrado: ");
-scanf("%d", &lado);
-area = lado * lado;
-printf("A area do quadrado e: %d", area);
-return 0;
+  int lado, area;
+  printf("Digite o lado do quadrado: ");
+  fflush(stdout);
+  scanf("%d", &lado);
+  fflush(stdin);
+  
+  area = lado * lado;
+  printf("A area do quadrado e: %d", area);
+  fflush(stdout);
+    
+  return 0;
 }
