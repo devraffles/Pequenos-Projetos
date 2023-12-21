@@ -1,8 +1,8 @@
 /* ==========================================================================
-Implemente um algoritmo em linguagem C que leia o raio de um cÌrculo e calcule 
-a sua ·rea e o seu perÌmetro. ApÛs os calculos, imprimir os resultados. 
-Obs.: o raio e os resultados de ·rea e perÌmetro podem ser n˙meros decimais. 
-PerÌmetro = 2 * PI * raio / ¡rea = PI * raio * raio - considerar PI = 3,14. 
+Implemente um algoritmo em linguagem C que leia o raio de um c√≠rculo e calcule 
+a sua √°rea e o seu per√≠metro. Ap√≥s os calculos, imprimir os resultados. 
+Obs.: o raio e os resultados de √°rea e per√≠metro podem ser n√∫meros decimais. 
+Per√≠metro = 2 * PI * raio / √Årea = PI * raio * raio - considerar PI = 3,14. 
 ============================================================================*/
 
 #include <stdio.h>
@@ -12,13 +12,16 @@ int main (){
 	float pi = 3.14;
 	
 	printf("digite o raio:");
+	fflush(stdout);
 	scanf("%f",&raio);
+	fflush(stdin);
 	
 	area = pi * (raio * raio);
 	perimetro = 2 * pi * raio;
 	
 	printf("Area:%.2f\n",area);
 	printf("Perimetro:%.2f",perimetro);
+	fflush(stdout);
 	
 	return 0;
 }
