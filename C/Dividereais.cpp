@@ -17,6 +17,7 @@ int main (){
 	resultado = n1 / n2;
 	
 	printf("Resultado:%f",resultado);
+	fflush(stdout);
 	
 	return 0;
 }
