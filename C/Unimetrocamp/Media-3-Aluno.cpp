@@ -36,14 +36,14 @@ typedef struct {
     float p1;
     float p2;
     float media;
-    char aprov_reprov[4]; // Adicionando espaço para o caractere nulo
+    char aprov_reprov[4];
 } Aluno;
 
 Aluno ler_Dados_Aluno(int iCount) {
     Aluno a;
     
     printf("\nNome do Aluno %d: ", iCount);
-    scanf("%39s", a.nome); // Limitando o número de caracteres lidos
+    scanf("%39s", a.nome);
     
     do{
         printf("\nNota P1: ");
@@ -79,24 +79,24 @@ int main() {
     int i;
     
     do {
-        for (i = 0; i < 3; i++) { // Corrigindo os índices do array
+        for (i = 0; i < 3; i++) {
             a[i] = ler_Dados_Aluno(i + 1);
         }
         
         
-        printf(" ________________________________________________\n");
+        printf(" ------------------------------------------------\n");
         printf("|                   TABELA                       |\n");
-        printf(" ________________________________________________\n");
+        printf(" ------------------------------------------------\n");
         printf("| # |  NOME  |  P1  |  P2  |  MEDIA |  Aprovado  |\n");
-        printf(" ________________________________________________\n");
+        printf(" ------------------------------------------------\n");
         for (i = 0; i < 3; i++) { // Corrigindo os índices do array
             printf("| %d |  %-6s  |  %-4.1f  |  %-4.1f  |  %-4.2f  |  %-4s|\n", i+1, a[i].nome, a[i].p1, a[i].p2, a[i].media, a[i].aprov_reprov);
-            printf(" ________________________________________________\n");    
+            printf(" ------------------------------------------------\n");    
         }
         
         printf("\n\nDigite 1 para continuar ou 2 para sair: ");
         scanf("%d", &resp);
-        while (getchar() != '\n'); // Limpar o buffer de entrada
+        while (getchar() != '\n');
     } while (resp == 1);
 
     return 0;
