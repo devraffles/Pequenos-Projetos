@@ -42,8 +42,8 @@ typedef struct {
 Aluno ler_Dados_Aluno(int iCount) {
     Aluno a;
     
-    printf("\nNome do Aluno %d: ", iCount);
-    scanf("%39s", a.nome);
+    printf("\nNome do Aluno %d: ", iCount + 1);
+    scanf("%s", a.nome);
     
     do{
         printf("\nNota P1: ");
@@ -80,7 +80,7 @@ int main() {
     
     do {
         for (i = 0; i < 3; i++) {
-            a[i] = ler_Dados_Aluno(i + 1);
+            a[i] = ler_Dados_Aluno(i);
         }
         
         
