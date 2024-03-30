@@ -1,26 +1,26 @@
 /****************************************************************************
 
-FaÁa um progrma em C que calcule todos os volumes 
+Fa√ßa um progrma em C que calcule todos os volumes 
 (Prismas, Cilindro, Cone)
 
 
-FÛrmula para calcular o volume do Prisma:
+F√≥rmula para calcular o volume do Prisma:
 
     V = Ab * h
 
-FÛrmula para calcular o volume da Pir‚mide:
+F√≥rmula para calcular o volume da Pir√¢mide:
 
     V = (Ab * h)/3
 
-FÛrmula para calcular o volume de um Cilindro:
+F√≥rmula para calcular o volume de um Cilindro:
 
     V = p * r^2 * h
 
-FÛrmula para calcular o volume de um Cone:
+F√≥rmula para calcular o volume de um Cone:
 
     V = (p * r^2 * h)/3
 
-FÛrmula para calcular o volume da Esfera:
+F√≥rmula para calcular o volume da Esfera:
 
     V = (4 * p * r^3 * h)/3
     
@@ -52,7 +52,7 @@ float volume_Prisma(){
     
     float Volume = ab * h;
     
-    printf("\nO seu Volume È %.f", Volume);
+    printf("\nO seu Volume √© %.f", Volume);
     
 	return Volume;
 }
@@ -73,7 +73,7 @@ float volume_Piramide (){
     
     float Volume = (ab * h)/3;
     
-    printf("\nO seu Volume È %.f", Volume);
+    printf("\nO seu Volume √© %.f", Volume);
     
 	return Volume;
 }
@@ -94,7 +94,7 @@ float volume_Cilindro (){
     
     double Volume = p * pow(r, 2) * h;
     
-    printf("\nO seu Volume È %.f", Volume);
+    printf("\nO seu Volume √© %.f", Volume);
     
 	return Volume;
 }
@@ -115,7 +115,7 @@ float volume_Cone (){
     
     double Volume = (p * pow(r, 2) * h)/3;
     
-    printf("\nO seu Volume È %.f", Volume);
+    printf("\nO seu Volume √© %.f", Volume);
     
 	return Volume;
 }
@@ -136,7 +136,7 @@ float volume_Esfera (){
     
     double Volume = (4 * p * pow(r, 3) * h)/3;
     
-    printf("\nO seu Volume È %.f", Volume);
+    printf("\nO seu Volume √© %.f", Volume);
     
 	return Volume;
 }
@@ -165,7 +165,7 @@ int main(){
         qual_Volume = escolha_Volume();
             
         if(qual_Volume < 0 || qual_Volume > 5){
-            printf("N„o h· essa opÁ„o, escolha novamente!\n\n");
+            printf("N√£o h√° essa op√ß√£o, escolha novamente!\n\n");
             qual_Volume = escolha_Volume();
         }
         else if(qual_Volume == 1){
