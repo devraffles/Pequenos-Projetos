@@ -22,8 +22,8 @@ float divisao_Resto(int a,int b) {
 
 int main() {
   float n1,n2,result;
-  n1 = 0.0;
-  n2 = 0.0;
+  n1 = 0.0f;
+  n2 = 0.0f;
   int op, resp;
   
     do{
