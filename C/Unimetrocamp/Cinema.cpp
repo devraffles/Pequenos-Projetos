@@ -1,21 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
+//reorganizar a estrutura de dados
 typedef struct{
     char tipo[50];
     float preco;
 } Ticket;
-
-typedef struct{
-    int tempo;
-} Horario;
-
-typedef struct{
-    char nome[50];
-    char genero[50];
-    char introducao[50];
-    Horario tempo_Filme;
-} Filme;
 
 typedef struct{
     char nome[50];
@@ -23,11 +13,6 @@ typedef struct{
     char assento[3];
     Filme escolha[3];
 } Cliente;
-
-typedef struct{
-    Filme filme;
-    Cliente cliente[3];
-} Sala;
 
 typedef struct{
     Sala sala[3];
