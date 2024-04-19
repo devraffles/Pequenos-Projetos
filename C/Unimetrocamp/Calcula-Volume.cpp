@@ -169,7 +169,7 @@ int main(){
             qual_Volume = escolha_Volume();
         }
         else if(qual_Volume == 1){
-        	volume_Prisma();
+            volume_Prisma();
         }
         else if(qual_Volume == 2){
             volume_Piramide();
