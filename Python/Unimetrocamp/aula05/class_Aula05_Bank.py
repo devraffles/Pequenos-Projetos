@@ -51,8 +51,6 @@ class Bank:
         parcelas_mes = emprestimo_total_juros / qtd_parcelas
         
         print(f"{conta.getNome_Titular()} o seu empréstimo de R${emprestimo:,.2f} concedido com sucesso. Total a pagar: R$ {emprestimo_total_juros:,.2f} em {qtd_parcelas} parcelas de R$ {parcelas_mes:,.2f}.")
-
-
             
     def viewContas (self):
         for conta in self.contasBancarias:
