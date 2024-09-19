@@ -1,9 +1,8 @@
 class Player:
     def __init__(self, nome):
         self.nome = nome
-
-    x = 0
-    y = 0
+        self.x = 0
+        self.y = 0
 
     def getNome(self):
         return self.nome
