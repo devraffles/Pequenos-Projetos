@@ -1,5 +1,3 @@
-import class_Aula05_Conta as ca
-
 class Bank:
     def __init__(self, nome):
         self.nome = nome

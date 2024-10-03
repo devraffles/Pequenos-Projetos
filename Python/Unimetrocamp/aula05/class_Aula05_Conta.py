@@ -5,7 +5,6 @@ class ContaBancaria:
     def __init__(self, nome_Titular):
         self.nome_Titular = nome_Titular
         self.num_Conta = random.randrange(0, 1000)
-        self.parcela = 0.0
         self.saldo = 0.0
 
     def getNum_Conta (self):
@@ -25,12 +24,6 @@ class ContaBancaria:
 
     def setSaldo (self, saldo):
         self.saldo = saldo
-
-    def getParcela (self):
-        return self.parcela
-
-    def setParcela (self, parcela):
-        self.parcela = parcela
         
     @staticmethod
     def Deposito (self, deposito, nome):
